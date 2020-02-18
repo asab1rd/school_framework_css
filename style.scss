@@ -1,4 +1,5 @@
 @import "variables";
+
 * {
   box-sizing: border-box;
 }
@@ -16,9 +17,16 @@ html {
 }
 
 .container {
+  width: 90%;
+  margin: 0 auto;
+}
+.container-fluid {
+  width: 100%;
+}
+.container,
+.container-fluid {
   display: flex;
   flex-direction: column;
-  width: 100%;
   .row {
     // display: grid;
     // grid-template-columns: repeat(12, 1fr);
@@ -49,4 +57,5 @@ html {
 .red {
   background-color: $blue;
 }
+@import "btn";
 @import "media";
