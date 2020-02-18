@@ -31,14 +31,11 @@ html {
       word-wrap: break-word;
       min-width: 0;
     }
-    .col-hidden {
-      display: none;
-    }
-    //
+
     @for $i from 1 through $grid-columns {
       $value: percentage($i / $grid-columns);
       .col-#{$i} {
-        display: flex !important;
+        display: flex;
         position: relative;
         flex-direction: column;
         word-wrap: break-word;
