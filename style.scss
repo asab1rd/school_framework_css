@@ -1,3 +1,4 @@
+@import "variables";
 * {
   box-sizing: border-box;
 }
@@ -17,12 +18,38 @@ html {
 .container {
   display: flex;
   flex-direction: column;
+  width: 100%;
   .row {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    // display: grid;
+    // grid-template-columns: repeat(12, 1fr);
+    display: flex;
+    // flex-wrap: wrap;
     .col {
+      display: flex;
       position: relative;
-      overflow-wrap: break-word;
+      flex-direction: column;
+      word-wrap: break-word;
+      min-width: 0;
+    }
+    .col-hidden {
+      display: none;
+    }
+    //
+    @for $i from 1 through $grid-columns {
+      $value: percentage($i / $grid-columns);
+      .col-#{$i} {
+        display: flex !important;
+        position: relative;
+        flex-direction: column;
+        word-wrap: break-word;
+        flex: 0 0 $value;
+        width: $value;
+      }
     }
   }
 }
+
+.red {
+  background-color: $blue;
+}
+@import "media";

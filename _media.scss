@@ -1,0 +1,94 @@
+$grid-columns: 12;
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .col-xs-hidden {
+    display: none;
+  }
+  @for $i from 1 through $grid-columns {
+    $value: percentage($i / $grid-columns);
+    .col-xs-#{$i} {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      word-wrap: break-word;
+      flex: 0 0 $value;
+      width: $value;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+// col-sm-
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .col-sm-hidden {
+    display: none;
+  }
+  @for $i from 1 through $grid-columns {
+    $value: percentage($i / $grid-columns);
+    .col-sm-#{$i} {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      word-wrap: break-word;
+      flex: 0 0 $value;
+      width: $value;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+// col-md-
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .col-md-hidden {
+    display: none;
+  }
+  @for $i from 1 through $grid-columns {
+    $value: percentage($i / $grid-columns);
+    .col-md-#{$i} {
+      display: flex !important;
+      position: relative;
+      flex-direction: column;
+      word-wrap: break-word;
+      flex: 0 0 $value;
+      width: $value;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+// col-lg-
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .col-lg-hidden {
+    display: none;
+  }
+  @for $i from 1 through $grid-columns {
+    $value: percentage($i / $grid-columns);
+    .col-lg-#{$i} {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      word-wrap: break-word;
+      flex: 0 0 $value;
+      width: $value;
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+// col-xl-
+@media (min-width: 1200px) {
+  .col-xl-hidden {
+    display: none;
+  }
+  @for $i from 1 through $grid-columns {
+    $value: percentage($i / $grid-columns);
+    .col-xl-#{$i} {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      word-wrap: break-word;
+      flex: 0 0 $value;
+      width: $value;
+    }
+  }
+}
