@@ -19,8 +19,10 @@
     } @else {
       color: #fff;
     }
-
     background-color: $color;
     border-color: $color;
+  }
+  .text-#{$info} {
+    color: $color !important;
   }
 }

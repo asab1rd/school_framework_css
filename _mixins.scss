@@ -3,10 +3,8 @@ $grid-columns: 12;
   @for $i from 1 through $grid-columns {
     $value: percentage($i / $grid-columns);
     .#{$property}-#{$i} {
-      display: flex;
       position: relative;
-      flex-direction: column;
-      word-wrap: break-word;
+      width: 100%;
       flex: 0 0 $value;
       width: $value;
     }

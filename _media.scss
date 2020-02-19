@@ -7,23 +7,42 @@ $grid-columns: 12;
 // Small devices (landscape phones, 576px and up) // from bootstrap
 // col-sm-
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .container,
+  .container-fluid {
+    max-width: 540px;
+  }
   @include col(col-sm);
 }
 
 // Medium devices (tablets, 768px and up) // from bootstrap
 // col-md-
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .container,
+  .container-fluid {
+    max-width: 720px;
+  }
   @include col(col-md);
 }
 
 // Large devices (desktops, 992px and up) // from bootstrap
 // col-lg-
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .container,
+  .container-fluid {
+    max-width: 960px;
+  }
+  .navbar-nav {
+    flex-direction: row;
+  }
   @include col(col-lg);
 }
 
 // Extra large devices (large desktops, 1200px and up) // from bootstrap
 // col-xl-
 @media (min-width: 1200px) {
+  .container,
+  .container-fluid {
+    max-width: 1140px;
+  }
   @include col(col-xl);
 }
