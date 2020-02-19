@@ -1,5 +1,5 @@
 @import "variables";
-
+@import "mixins";
 * {
   box-sizing: border-box;
 }
@@ -15,10 +15,12 @@ html {
   text-align: left;
   background-color: #fff;
 }
-
+div {
+  display: block;
+}
 .container {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  padding: 15px;
 }
 .container-fluid {
   width: 100%;
@@ -28,8 +30,7 @@ html {
   display: flex;
   flex-direction: column;
   .row {
-    // display: grid;
-    // grid-template-columns: repeat(12, 1fr);
+    box-sizing: border-box;
     display: flex;
     // flex-wrap: wrap;
     .col {
@@ -40,17 +41,7 @@ html {
       min-width: 0;
     }
 
-    @for $i from 1 through $grid-columns {
-      $value: percentage($i / $grid-columns);
-      .col-#{$i} {
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        word-wrap: break-word;
-        flex: 0 0 $value;
-        width: $value;
-      }
-    }
+    @include col(col);
   }
 }
 
