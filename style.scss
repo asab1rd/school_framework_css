@@ -32,13 +32,16 @@ div {
   .row {
     box-sizing: border-box;
     display: flex;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     .col {
       display: flex;
       position: relative;
       flex-direction: column;
       word-wrap: break-word;
       min-width: 0;
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
     }
 
     @include col(col);
