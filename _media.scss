@@ -7,9 +7,9 @@ $grid-columns: 12;
   .navbar-nav {
     flex-direction: column;
   }
-  .collapse {
-    display: none;
-  }
+  // .collapse {
+  //   display: none;
+  // }
   @include col(col-xs);
 }
 
@@ -22,9 +22,9 @@ $grid-columns: 12;
   .navbar-nav {
     flex-direction: column;
   }
-  .collapse {
-    display: none;
-  }
+  // .collapse {
+  //   display: none;
+  // }
   @include col(col-sm);
 }
 

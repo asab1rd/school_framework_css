@@ -20,9 +20,10 @@
 }
 
 .navbar-collapse {
-  display: flex;
+  display: none;
   flex-basis: auto;
   flex-grow: 1;
+  justify-content: space-around;
 }
 .navbar-nav {
   display: flex;
