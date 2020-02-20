@@ -84,6 +84,41 @@ ul {
 .hidden {
   display: none;
 }
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  // z-index: 1050;
+  z-index: 1072;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+}
+.modal-dialog {
+  border-radius: 1rem;
+  // max-width: 50%;
+  margin: 10% auto;
+  background-color: white;
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+    font-size: 1.5em;
+    .close {
+      margin-top: 0;
+      padding-top: 0;
+      font-size: 1.5em;
+      color: $red;
+    }
+  }
+  .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+  }
+}
 @import "alert";
 @import "btn";
 @import "navbar";
