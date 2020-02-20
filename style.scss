@@ -80,6 +80,10 @@ ul {
   border: 1px solid transparent;
   border-radius: 0.25rem;
 }
+.modal,
+.hidden {
+  display: none;
+}
 @import "alert";
 @import "btn";
 @import "navbar";

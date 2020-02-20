@@ -7,9 +7,16 @@ $grid-columns: 12;
   .navbar-nav {
     flex-direction: column;
   }
-  // .collapse {
-  //   display: none;
-  // }
+  .navbar-toggler {
+    order: 1;
+  }
+  .navbar-brand {
+    order: 1;
+  }
+  .navbar-collapse {
+    margin-top: 20px;
+    order: 2;
+  }
   @include col(col-xs);
 }
 
