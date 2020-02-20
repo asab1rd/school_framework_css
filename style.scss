@@ -17,9 +17,9 @@ html {
   text-align: left;
   background-color: #fff;
 }
-div {
-  display: block;
-}
+// div {
+//   display: block;
+// }
 img {
   vertical-align: middle;
   border-style: none;
@@ -29,22 +29,30 @@ a {
   text-decoration: none;
   background-color: transparent;
 }
-
+ul {
+  margin-top: 0;
+}
 .container {
   width: 100%;
 }
 .container-fluid {
-  width: 100%;
+  width: 100vw;
 }
 .container,
 .container-fluid {
-  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  // width: 100%;
+  border: red 1px solid;
+  display: flex;
+  flex-direction: column;
   .row {
     display: flex;
     flex-wrap: wrap;
     .col {
       position: relative;
-      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
       flex-basis: 0;
       flex-grow: 1;
       max-width: 100%;

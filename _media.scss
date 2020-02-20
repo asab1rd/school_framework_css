@@ -1,15 +1,29 @@
 $grid-columns: 12;
 // Extra small devices (portrait phones, less than 576px) // from bootstrap
 @media (max-width: 575.98px) {
+  .container {
+    max-width: 510px;
+  }
+  .navbar-nav {
+    flex-direction: column;
+  }
+  .collapse {
+    display: none;
+  }
   @include col(col-xs);
 }
 
 // Small devices (landscape phones, 576px and up) // from bootstrap
 // col-sm-
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .container,
-  .container-fluid {
+  .container {
     max-width: 540px;
+  }
+  .navbar-nav {
+    flex-direction: column;
+  }
+  .collapse {
+    display: none;
   }
   @include col(col-sm);
 }
@@ -17,8 +31,7 @@ $grid-columns: 12;
 // Medium devices (tablets, 768px and up) // from bootstrap
 // col-md-
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .container,
-  .container-fluid {
+  .container {
     max-width: 720px;
   }
   @include col(col-md);
@@ -27,21 +40,17 @@ $grid-columns: 12;
 // Large devices (desktops, 992px and up) // from bootstrap
 // col-lg-
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .container,
-  .container-fluid {
+  .container {
     max-width: 960px;
   }
-  .navbar-nav {
-    flex-direction: row;
-  }
+
   @include col(col-lg);
 }
 
 // Extra large devices (large desktops, 1200px and up) // from bootstrap
 // col-xl-
 @media (min-width: 1200px) {
-  .container,
-  .container-fluid {
+  .container {
     max-width: 1140px;
   }
   @include col(col-xl);
