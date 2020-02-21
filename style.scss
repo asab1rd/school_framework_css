@@ -150,7 +150,63 @@ ul {
     margin: 10px;
   }
 }
-// @import "alert";
+
+.tooltip {
+  position: relative;
+  white-space: nowrap;
+  cursor: help;
+  &:hover::after,
+  &:focus::after {
+    content: attr(title);
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: $primary;
+  }
+  &[data-placement="top"] {
+    &:hover::after,
+    &:focus::after {
+      top: -2.4em;
+      background-color: $green;
+    }
+  }
+  &[data-placement="bottom"] {
+    &:hover::after,
+    &:focus::after {
+      bottom: 0;
+      background-color: $cyan;
+    }
+  }
+  &[data-placement="left"] {
+    &:hover::after,
+    &:focus::after {
+      left: 0;
+      background-color: $primary;
+    }
+  }
+  &[data-placement="right"] {
+    &:hover::after,
+    &:focus::after {
+      right: 0;
+      background-color: $primary;
+    }
+  }
+}
+// .tooltip:hover::after,
+// .tooltip:focus::after {
+//   content: attr(title);
+//   position: absolute;
+//   @if attr(data-placement) == "top" {
+//     background-color: $green;
+//   } @else if (attr(data-placement) == "bottom") {
+//     background-color: $cyan;
+//   } @else {
+//     background-color: $primary;
+//   }
+//   top: -2.4em;
+//   left: 50%;
+//   transform: translateX(-50%);
+// }
+
 @import "btn";
 @import "navbar";
 @import "media";
