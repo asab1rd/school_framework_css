@@ -61,6 +61,13 @@ ul {
     @include col(col, $grid-columns);
   }
 }
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
 .rounded {
   border-radius: 0.25rem !important;
 }

@@ -25,4 +25,7 @@
   .text-#{$info} {
     color: $color !important;
   }
+  .bg-#{$info} {
+    background-color: $color;
+  }
 }
