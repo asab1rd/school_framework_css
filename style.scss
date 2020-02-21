@@ -92,7 +92,7 @@ ul {
 
 // FOR IMAGER OR OTHER
 .rounded {
-  border-radius: 0.25rem !important;
+  border-radius: 0.5rem !important;
 }
 .rounded-circle {
   border-radius: 50% !important;
@@ -100,6 +100,7 @@ ul {
 .blur {
   filter: blur(5px);
 }
+// END IMAGE
 .visible {
   visibility: visible !important;
 }
@@ -154,58 +155,46 @@ ul {
 .tooltip {
   position: relative;
   white-space: nowrap;
-  cursor: help;
+  cursor: pointer;
   &:hover::after,
   &:focus::after {
-    content: attr(title);
+    content: attr(data-title);
     position: absolute;
-    transform: translateX(-50%);
+    padding: 0.2em;
+    border-radius: 0.2em;
     background-color: $primary;
   }
   &[data-placement="top"] {
     &:hover::after,
     &:focus::after {
-      top: -2.4em;
-      background-color: $green;
+      transform: translateX(-60%);
+      top: -2em;
     }
   }
   &[data-placement="bottom"] {
     &:hover::after,
     &:focus::after {
-      bottom: 0;
+      transform: translateX(-60%);
+      bottom: -2em;
       background-color: $cyan;
     }
   }
   &[data-placement="left"] {
     &:hover::after,
     &:focus::after {
-      left: 0;
+      transform: translateX(-60%);
+      left: -5em;
       background-color: $primary;
     }
   }
   &[data-placement="right"] {
     &:hover::after,
     &:focus::after {
-      right: 0;
+      // right: 14em;
       background-color: $primary;
     }
   }
 }
-// .tooltip:hover::after,
-// .tooltip:focus::after {
-//   content: attr(title);
-//   position: absolute;
-//   @if attr(data-placement) == "top" {
-//     background-color: $green;
-//   } @else if (attr(data-placement) == "bottom") {
-//     background-color: $cyan;
-//   } @else {
-//     background-color: $primary;
-//   }
-//   top: -2.4em;
-//   left: 50%;
-//   transform: translateX(-50%);
-// }
 
 @import "btn";
 @import "navbar";

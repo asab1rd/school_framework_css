@@ -49,3 +49,16 @@ $(".nav-link").click(function(e) {
     $(this).addClass("active");
   }
 });
+
+//tooltip
+$(".tooltip").hover(function() {
+  const title = $(this).attr("title");
+  $(this)
+    .removeAttr("title")
+    .attr("data-title", title);
+  $(this).mouseleave(function() {
+    $(this)
+      .removeAttr("data-title")
+      .attr("title", title);
+  });
+});
