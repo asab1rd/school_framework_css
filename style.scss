@@ -43,7 +43,7 @@ ul {
   margin-right: auto;
   margin-left: auto;
   // width: 100%;
-  border: red 1px solid;
+  border: $red 1px solid;
   display: flex;
   flex-direction: column;
   .row {
@@ -67,7 +67,30 @@ ul {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  .nav-item {
+    margin: 0 0 2px 0;
+    .nav-link {
+      padding: 0.5rem 1rem;
+    }
+    .active {
+      color: $gray;
+      background-color: #f1f1f1;
+      border: 1px black solid;
+      border-bottom: none;
+      border-radius: 1px;
+    }
+  }
 }
+.tab-content {
+  .tab-pane {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+}
+
+// FOR IMAGER OR OTHER
 .rounded {
   border-radius: 0.25rem !important;
 }

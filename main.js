@@ -1,6 +1,3 @@
-// $(function() {
-//   $(document).tooltip();
-// });
 const navbar = document.getElementById("navbarSupportedContent");
 const navbarTogler = document.getElementById("navbarToggler");
 const dropdown = document.getElementById("navbarDropdown");
@@ -15,7 +12,6 @@ navbarTogler.onclick = e => {
 // Plugin For Modal
 $(function() {
   $.fn.modal = function(state) {
-    console.log($(this));
     if (state === "show") {
       $(this).show();
     } else if (state === "hide") {
@@ -41,4 +37,15 @@ $(function() {
       $(dismiss).modal("hide");
     }
   });
+});
+
+// TABS Control
+$(".nav-link").click(function(e) {
+  e.preventDefault();
+  if ($(this).attr("data-toggle") === "tab") {
+    const tabId = $(this).attr("aria-controls");
+    $(".tab-pane, .nav-link").removeClass("active");
+    $("#" + tabId).addClass("active");
+    $(this).addClass("active");
+  }
 });

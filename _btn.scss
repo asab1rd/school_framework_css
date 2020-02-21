@@ -13,6 +13,7 @@
   border-radius: 0.25rem;
 }
 @each $info, $color in $infos {
+  // BTN
   .btn-#{$info} {
     @if $info == warning or $info==light {
       color: #000;
@@ -22,10 +23,16 @@
     background-color: $color;
     border-color: $color;
   }
+  // Text
   .text-#{$info} {
     color: $color !important;
   }
+  // Backgrounds
   .bg-#{$info} {
     background-color: $color;
+  }
+  // Border
+  .border-#{$info} {
+    border-color: $color;
   }
 }
