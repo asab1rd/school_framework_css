@@ -17,7 +17,7 @@ $grid-columns: 12;
     margin-top: 20px;
     order: 2;
   }
-  @include col(col-xs);
+  @include col(col-xs, $grid-columns);
 }
 
 // Small devices (landscape phones, 576px and up) // from bootstrap
@@ -32,7 +32,7 @@ $grid-columns: 12;
   // .collapse {
   //   display: none;
   // }
-  @include col(col-sm);
+  @include col(col-sm, $grid-columns);
 }
 
 // Medium devices (tablets, 768px and up) // from bootstrap
@@ -41,7 +41,7 @@ $grid-columns: 12;
   .container {
     max-width: 720px;
   }
-  @include col(col-md);
+  @include col(col-md, $grid-columns);
 }
 
 // Large devices (desktops, 992px and up) // from bootstrap
@@ -51,7 +51,7 @@ $grid-columns: 12;
     max-width: 960px;
   }
 
-  @include col(col-lg);
+  @include col(col-lg, $grid-columns);
 }
 
 // Extra large devices (large desktops, 1200px and up) // from bootstrap
@@ -60,5 +60,5 @@ $grid-columns: 12;
   .container {
     max-width: 1140px;
   }
-  @include col(col-xl);
+  @include col(col-xl, $grid-columns);
 }

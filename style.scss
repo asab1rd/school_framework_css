@@ -58,7 +58,7 @@ ul {
       max-width: 100%;
     }
 
-    @include col(col);
+    @include col(col, $grid-columns);
   }
 }
 .rounded {
@@ -80,6 +80,7 @@ ul {
   border: 1px solid transparent;
   border-radius: 0.25rem;
 }
+@include alert(alert);
 .modal,
 .hidden {
   display: none;

@@ -1,5 +1,4 @@
-$grid-columns: 12;
-@mixin col($property) {
+@mixin col($property, $grid-columns) {
   @for $i from 1 through $grid-columns {
     $value: percentage($i / $grid-columns);
     .#{$property}-#{$i} {
@@ -7,6 +6,16 @@ $grid-columns: 12;
       width: 100%;
       flex: 0 0 $value;
       width: $value;
+    }
+  }
+}
+
+@mixin alert($property) {
+  @each $info, $alert in $alerts {
+    .#{$property}-#{$info} {
+      color: map-get($alert, "color");
+      background-color: map-get($alert, "background-color");
+      border-color: map-get($alert, "border-color");
     }
   }
 }

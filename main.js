@@ -27,6 +27,15 @@ $(function() {
     if ($(this).attr("data-target")) {
       const target = $(this).attr("data-target");
       $(target).modal("show");
+
+      $(target)
+        .click(function(e) {
+          $(target).modal("hide");
+        })
+        .children()
+        .click(function() {
+          return false;
+        });
     } else if ($(this).attr("data-dismiss")) {
       const dismiss = $(this).attr("data-dismiss");
       $(dismiss).modal("hide");
