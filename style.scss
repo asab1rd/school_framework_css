@@ -44,6 +44,7 @@ ul {
   margin-right: auto;
   margin-left: auto;
   // width: 100%;
+  // border: $red 1px solid;
   display: flex;
   flex-direction: column;
   .row {
@@ -131,6 +132,8 @@ ul {
 .modal-dialog {
   border-radius: 1rem;
   // max-width: 50%;
+  width: 50%;
+  min-width: 375px;
   margin: 10% auto;
   background-color: white;
   .modal-header {
@@ -145,10 +148,13 @@ ul {
       color: $red;
     }
   }
+  .modal-body {
+    margin: 0 3% 4% 3%;
+  }
   .modal-footer {
     display: flex;
     justify-content: flex-end;
-    margin: 10px;
+    padding: 4%;
   }
 }
 
