@@ -7,293 +7,322 @@
     <link rel="stylesheet" href="style.min.css" />
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="row">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Home <span class="sr-only">(current)</span></a
-                >
-              </li>
+    <div class="piles" id="piles">
+      <div class="pile-section">
+        <div class="container-fluid">
+          <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#"
+                      >Home <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input
+                    class="form-control mr-sm-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button
+                    class="btn btn-outline-success my-2 my-sm-0"
+                    type="submit"
+                  >
+                    Search
+                  </button>
+                </form>
+              </div>
+              <button class="navbar-toggler" type="button" id="navbarToggler">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </nav>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <button
+              class="tooltip bg-dark text-light"
+              title="I'm a cool tooltip at Top"
+              data-placement="top"
+            >
+              Tooltip Bottom
+            </button>
+            <button
+              class="tooltip bg-dark text-light"
+              title="I'm a cool tooltip at the bottom"
+              data-placement="bottom"
+            >
+              Tooltip Bottom
+            </button>
+            <button
+              class="tooltip bg-dark text-light"
+              title="I'm a cool tooltip at the left"
+              data-placement="left"
+            >
+              Tooltip Left
+            </button>
+            <button
+              class="tooltip bg-dark text-light"
+              title="I'm a cool tooltip at the right"
+              data-placement="rigth"
+            >
+              Tooltip Right
+            </button>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
+                  class="nav-link active"
+                  id="home-tab"
+                  data-toggle="tab"
+                  href="#home"
+                  role="tab"
+                  aria-controls="home"
+                  aria-selected="true"
+                  >Home</a
                 >
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
+                <a
+                  class="nav-link"
+                  id="profile-tab"
+                  data-toggle="tab"
+                  href="#profile"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                  >Profile</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="contact-tab"
+                  data-toggle="tab"
+                  href="#contact"
+                  role="tab"
+                  aria-controls="contact"
+                  aria-selected="false"
+                  >Contact</a
+                >
               </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input
-                class="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button
-                class="btn btn-outline-success my-2 my-sm-0"
-                type="submit"
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane active"
+                id="home"
+                role="tabpanel"
+                aria-labelledby="home-tab"
               >
-                Search
-              </button>
-            </form>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                commodi ipsum debitis magni possimus quia modi qui, quod
+                consectetur odit quaerat quos quasi, labore cumque? Blanditiis
+                ratione quo magnam accusantium libero molestiae. Asperiores, id
+                odio? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ipsa inventore fugit repellat aut explicabo, voluptatibus iste
+                magni, consequatur distinctio, quis at dignissimos repudiandae
+                repellendus facere hic obcaecati minima expedita rerum!
+              </div>
+              <div
+                class="tab-pane text-light bg-danger"
+                id="profile"
+                role="tabpanel"
+                aria-labelledby="profile-success"
+              >
+                Lorem 2 ipsum dolor sit amet consectetur adipisicing elit. Non
+                commodi ipsum debitis magni possimus quia modi qui, quod
+                consectetur odit quaerat quos quasi, labore cumque? Blanditiis
+                ratione quo magnam accusantium libero molestiae. Asperiores, id
+                odio? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus, odit! Officiis laborum possimus necessitatibus
+                rerum illo quasi ratione doloribus blanditiis aperiam
+                recusandae. Est similique placeat consequuntur quibusdam
+                voluptatibus vitae libero laudantium aliquid praesentium sint,
+                aperiam facere delectus assumenda aliquam officia. Voluptatum
+                molestiae sit ipsa doloribus repellat asperiores quas officiis
+                hic illo incidunt beatae iure ullam quidem earum dolor aliquam
+                placeat iste dolorum, quae molestias dolores repudiandae
+                impedit. Magnam asperiores temporibus assumenda ratione sint
+                quidem placeat quasi, quaerat odio autem qui esse eveniet eum
+                quisquam quae amet aperiam facere nemo iusto. Quas in illum, rem
+                consectetur necessitatibus culpa at quo officiis.
+              </div>
+              <div
+                class="tab-pane text-light bg-dark"
+                id="contact"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+              >
+                ipsum debitis magni possimus quia modi qui, quod consectetur
+                odit quaerat quos quasi, labore cumque? Blanditiis ratione quo
+                magnam accusantium libero molestiae. Asperiores, id odio? Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Optio itaque
+                vel ullam. Nostrum porro aliquid unde dolore sunt inventore
+                eaque tempore, culpa suscipit qui aspernatur recusandae quam
+                corporis excepturi non vel voluptatibus alias quisquam itaque
+                facilis ducimus neque nesciunt? Expedita facere neque
+                perspiciatis quisquam at quo alias vitae dolorem in.
+              </div>
+            </div>
           </div>
-          <button class="navbar-toggler" type="button" id="navbarToggler">
-            <span class="navbar-toggler-icon"></span>
-            <span class="navbar-toggler-icon"></span>
-            <span class="navbar-toggler-icon"></span>
+        </div>
+      </div>
+      <div class="pile-section ">
+        <div class="container">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          >
+            Launch demo modal
           </button>
-        </nav>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <button
-          class="tooltip bg-dark text-light"
-          title="I'm a cool tooltip at Top"
-          data-placement="top"
-        >
-          Tooltip Bottom
-        </button>
-        <button
-          class="tooltip bg-dark text-light"
-          title="I'm a cool tooltip at the bottom"
-          data-placement="bottom"
-        >
-          Tooltip Bottom
-        </button>
-        <button
-          class="tooltip bg-dark text-light"
-          title="I'm a cool tooltip at the left"
-          data-placement="left"
-        >
-          Tooltip Left
-        </button>
-        <button
-          class="tooltip bg-dark text-light"
-          title="I'm a cool tooltip at the right"
-          data-placement="rigth"
-        >
-          Tooltip Right
-        </button>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              id="home-tab"
-              data-toggle="tab"
-              href="#home"
-              role="tab"
-              aria-controls="home"
-              aria-selected="true"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              id="profile-tab"
-              data-toggle="tab"
-              href="#profile"
-              role="tab"
-              aria-controls="profile"
-              aria-selected="false"
-              >Profile</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              id="contact-tab"
-              data-toggle="tab"
-              href="#contact"
-              role="tab"
-              aria-controls="contact"
-              aria-selected="false"
-              >Contact</a
-            >
-          </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-          <div
-            class="tab-pane active"
-            id="home"
-            role="tabpanel"
-            aria-labelledby="home-tab"
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non commodi
-            ipsum debitis magni possimus quia modi qui, quod consectetur odit
-            quaerat quos quasi, labore cumque? Blanditiis ratione quo magnam
-            accusantium libero molestiae. Asperiores, id odio?
-          </div>
-          <div
-            class="tab-pane text-light bg-danger"
-            id="profile"
-            role="tabpanel"
-            aria-labelledby="profile-success"
-          >
-            Lorem 2 ipsum dolor sit amet consectetur adipisicing elit. Non
-            commodi ipsum debitis magni possimus quia modi qui, quod consectetur
-            odit quaerat quos quasi, labore cumque? Blanditiis ratione quo
-            magnam accusantium libero molestiae. Asperiores, id odio?
-          </div>
-          <div
-            class="tab-pane text-light bg-dark"
-            id="contact"
-            role="tabpanel"
-            aria-labelledby="contact-tab"
-          >
-            Lorem 3 ipsum dolor sit amet consectetur adipisicing elit. Non
-            commodi ipsum debitis magni possimus quia modi qui, quod consectetur
-            odit quaerat quos quasi, labore cumque? Blanditiis ratione quo
-            magnam accusantium libero molestiae. Asperiores, id odio?
+          <div class="modal fade" id="exampleModal">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Modal title
+                  </h5>
+                  <button
+                    type="button"
+                    class="close col-3"
+                    data-dismiss="#exampleModal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="#exampleModal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <button
-        type="button"
-        class="btn btn-primary"
-        data-toggle="modal"
-        data-target="#exampleModal"
-      >
-        Launch demo modal
-      </button>
-      <div class="modal fade" id="exampleModal">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button
-                type="button"
-                class="close col-3"
-                data-dismiss="#exampleModal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
+        <div class="container">
+          <div class="row">
+            <p class="text-primary">.text-primary</p>
+            <p class="text-secondary">.text-secondary</p>
+            <p class="text-success">.text-success</p>
+            <p class="text-danger">.text-danger</p>
+            <p class="text-warning">.text-warning</p>
+            <p class="text-info">.text-info</p>
+            <p class="text-light bg-dark">.text-light</p>
+            <p class="text-dark">.text-dark</p>
+            <p class="text-muted">.text-muted</p>
+            <p class="text-white bg-dark">.text-white</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="alert alert-primary" role="alert">
+              This is a primary alert—check it out!
             </div>
-            <div class="modal-body">
-              ...
+            <div class="alert alert-secondary" role="alert">
+              This is a secondary alert—check it out!
             </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="#exampleModal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">
-                Save changes
-              </button>
+            <div class="alert alert-success" role="alert">
+              This is a success alert—check it out!
+            </div>
+            <div class="alert alert-danger" role="alert">
+              This is a danger alert—check it out!
+            </div>
+            <div class="alert alert-warning" role="alert">
+              This is a warning alert—check it out!
+            </div>
+            <div class="alert alert-info" role="alert">
+              This is a info alert—check it out!
+            </div>
+            <div class="alert alert-light" role="alert">
+              This is a light alert—check it out!
+            </div>
+            <div class="alert alert-dark" role="alert">
+              This is a dark alert—check it out!
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <p class="text-primary">.text-primary</p>
-        <p class="text-secondary">.text-secondary</p>
-        <p class="text-success">.text-success</p>
-        <p class="text-danger">.text-danger</p>
-        <p class="text-warning">.text-warning</p>
-        <p class="text-info">.text-info</p>
-        <p class="text-light bg-dark">.text-light</p>
-        <p class="text-dark">.text-dark</p>
-        <p class="text-muted">.text-muted</p>
-        <p class="text-white bg-dark">.text-white</p>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="alert alert-primary" role="alert">
-          This is a primary alert—check it out!
+      <div class="pile-section">
+        <div class="container">
+          <div class="row">
+            <img
+              class="rounded"
+              src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
+              alt="Placeholder 800x800"
+            />
+            <img
+              class="rounded-circle"
+              src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
+              alt="Placeholder 800x800"
+            />
+            <img
+              class="blur"
+              src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
+              alt="Placeholder 800x800"
+            />
+          </div>
         </div>
-        <div class="alert alert-secondary" role="alert">
-          This is a secondary alert—check it out!
-        </div>
-        <div class="alert alert-success" role="alert">
-          This is a success alert—check it out!
-        </div>
-        <div class="alert alert-danger" role="alert">
-          This is a danger alert—check it out!
-        </div>
-        <div class="alert alert-warning" role="alert">
-          This is a warning alert—check it out!
-        </div>
-        <div class="alert alert-info" role="alert">
-          This is a info alert—check it out!
-        </div>
-        <div class="alert alert-light" role="alert">
-          This is a light alert—check it out!
-        </div>
-        <div class="alert alert-dark" role="alert">
-          This is a dark alert—check it out!
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <img
-          class="rounded"
-          src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
-          alt="Placeholder 800x800"
-        />
-        <img
-          class="rounded-circle"
-          src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
-          alt="Placeholder 800x800"
-        />
-        <img
-          class="blur"
-          src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
-          alt="Placeholder 800x800"
-        />
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-secondary">Secondary</button>
-        <button type="button" class="btn btn-success">Success</button>
-        <button type="button" class="btn btn-danger">Danger</button>
-        <button type="button" class="btn btn-warning">Warning</button>
-        <button type="button" class="btn btn-info">Info</button>
-        <button type="button" class="btn btn-light">Light</button>
-        <button type="button" class="btn btn-dark">Dark</button>
-        <button type="button" class="btn btn-link">Link</button>
-      </div>
-      <div class="row">
-        <textarea name="" id="" cols="120" rows="25">
+        <div class="container">
+          <div class="row">
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+            <button type="button" class="btn btn-link">Link</button>
+          </div>
+          <div class="row">
+            <textarea name="" id="" cols="120" rows="25">
         <button type="button" class="btn btn-primary" title="That&apos;s what this widget is">Primary</button>
         <button type="button" class="btn btn-secondary">Secondary</button>
         <button type="button" class="btn btn-success">Success</button>
@@ -305,302 +334,304 @@
 
         <button type="button" class="btn btn-link">Link</button>
       </textarea
-        >
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
-        src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
-        alt="Placeholder 800x800"
-      /> -->
+            >
+          </div>
         </div>
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
+        <div class="container">
+          <div class="row">
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
         src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
         alt="Placeholder 800x800"
       /> -->
+            </div>
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
+        src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
+        alt="Placeholder 800x800"
+      /> -->
+            </div>
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
+        src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
+        alt="Placeholder 800x800"
+      /> -->
+            </div>
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
+        src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
+        alt="Placeholder 800x800"
+      /> -->
+            </div>
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
+        src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
+        alt="Placeholder 800x800"
+      /> -->
+            </div>
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
+        src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
+        alt="Placeholder 800x800"
+      /> -->
+            </div>
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
+        src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
+        alt="Placeholder 800x800"
+      /> -->
+            </div>
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
+        src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
+        alt="Placeholder 800x800"
+      /> -->
+            </div>
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
+        src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
+        alt="Placeholder 800x800"
+      /> -->
+            </div>
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
+        src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
+        alt="Placeholder 800x800"
+      /> -->
+            </div>
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
+        src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
+        alt="Placeholder 800x800"
+      /> -->
+            </div>
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
+        src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
+        alt="Placeholder 800x800"
+      /> -->
+            </div>
+          </div>
         </div>
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
+        <div class="container-fluid">
+          <div class="row">
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
         src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
         alt="Placeholder 800x800"
       /> -->
-        </div>
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
+            </div>
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
         src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
         alt="Placeholder 800x800"
       /> -->
-        </div>
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
+            </div>
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
         src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
         alt="Placeholder 800x800"
       /> -->
-        </div>
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
+            </div>
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
         src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
         alt="Placeholder 800x800"
       /> -->
-        </div>
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
+            </div>
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
         src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
         alt="Placeholder 800x800"
       /> -->
-        </div>
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
+            </div>
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
         src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
         alt="Placeholder 800x800"
       /> -->
-        </div>
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
+            </div>
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
         src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
         alt="Placeholder 800x800"
       /> -->
-        </div>
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
+            </div>
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
         src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
         alt="Placeholder 800x800"
       /> -->
-        </div>
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
+            </div>
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
         src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
         alt="Placeholder 800x800"
       /> -->
-        </div>
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
+            </div>
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
         src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
         alt="Placeholder 800x800"
       /> -->
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
+            </div>
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
         src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
         alt="Placeholder 800x800"
       /> -->
-        </div>
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
+            </div>
+            <div class="carte col">
+              <h2>Random Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officia quisquam animi quibusdam voluptate exercitationem
+                nesciunt sit doloribus, porro natus aliquam.
+              </p>
+              <!-- <img
         src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
         alt="Placeholder 800x800"
       /> -->
-        </div>
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
-        src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
-        alt="Placeholder 800x800"
-      /> -->
-        </div>
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
-        src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
-        alt="Placeholder 800x800"
-      /> -->
-        </div>
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
-        src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
-        alt="Placeholder 800x800"
-      /> -->
-        </div>
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
-        src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
-        alt="Placeholder 800x800"
-      /> -->
-        </div>
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
-        src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
-        alt="Placeholder 800x800"
-      /> -->
-        </div>
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
-        src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
-        alt="Placeholder 800x800"
-      /> -->
-        </div>
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
-        src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
-        alt="Placeholder 800x800"
-      /> -->
-        </div>
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
-        src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
-        alt="Placeholder 800x800"
-      /> -->
-        </div>
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
-        src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
-        alt="Placeholder 800x800"
-      /> -->
-        </div>
-        <div class="carte col">
-          <h2>Random Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
-            quisquam animi quibusdam voluptate exercitationem nesciunt sit
-            doloribus, porro natus aliquam.
-          </p>
-          <!-- <img
-        src="https://via.placeholder.com/200/0000FF/808080%20?Text=LeZachDansLaZone%20C/O%20https://placeholder.com/"
-        alt="Placeholder 800x800"
-      /> -->
+            </div>
+          </div>
         </div>
       </div>
     </div>

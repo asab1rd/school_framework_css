@@ -17,6 +17,7 @@ html {
   text-align: left;
   background-color: #fff;
 }
+@import "pile";
 // div {
 //   display: block;
 // }
@@ -43,7 +44,6 @@ ul {
   margin-right: auto;
   margin-left: auto;
   // width: 100%;
-  border: $red 1px solid;
   display: flex;
   flex-direction: column;
   .row {

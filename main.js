@@ -62,3 +62,45 @@ $(".tooltip").hover(function() {
       .attr("title", title);
   });
 });
+
+// My element on viewport
+$.fn.isOnScreen = function() {
+  var win = $(window);
+
+  var viewport = {
+    top: win.scrollTop(),
+    left: win.scrollLeft(),
+  }; // LEFT AND RIGHT VIEW
+  viewport.right = viewport.left + win.width();
+  viewport.bottom = viewport.top + win.height();
+
+  // My ELEMENT Overflow X or Y
+  var bounds = this.offset();
+  bounds.right = bounds.left + this.outerWidth();
+  bounds.bottom = bounds.top + this.outerHeight();
+
+  return !(
+    viewport.right < bounds.left ||
+    viewport.left > bounds.right ||
+    viewport.bottom < bounds.top ||
+    viewport.top > bounds.bottom
+  );
+};
+// let activeSectionId = 0;
+// const sections = $(".pile-section");
+// let activeSection = sections[activeSectionId];
+// activeSection.classList.add("active");
+// const winHeight = $(window).height();
+// $("body").scroll(function() {
+//   // $(".pile-section")[active].classList.add("active");
+//   // console.log($(this).scrollTop(), activeSection.offsetHeight);
+
+//   if ($(this).scrollTop() > 10 + winHeight * activeSectionId) {
+//     $(".pile-section").removeClass("active");
+//     activeSectionId =
+//       sections.length === activeSectionId + 1 ? 0 : activeSectionId + 1;
+//     activeSection = sections[activeSectionId];
+//     activeSection.classList.add("active");
+//     $(this).scrollTop(winHeight * activeSectionId);
+//   }
+// });
